@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_dashboard_white_24dp"
+        android:title="@string/menu_home"
+        android:iconTint="@color/cyan"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_account_box_white_24dp"
+        android:title="@string/menu_personal"
+        android:iconTint="@color/cyan"/>
+
+    <item
+        android:id="@+id/navigation_statistic"
+        android:icon="@drawable/ic_insert_chart_white_24dp"
+        android:title="@string/menu_statistic"
+        android:iconTint="@color/cyan"/>
+
+    <item
+        android:id="@+id/navigation_education"
+        android:icon="@drawable/ic_library_books_white_24dp"
+        android:title="@string/menu_education"
+        android:iconTint="@color/cyan"/>
+</menu>

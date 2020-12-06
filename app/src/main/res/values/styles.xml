@@ -1,0 +1,110 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:buttonTint">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_nm</item>
+    </style>
+
+    <style name="CustomCardView" parent="AppTheme">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="ExtendedEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/f_pink</item>
+        <item name="android:textSize">@dimen/font_nm</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:elevation">0dp</item>
+        <item name="fabSize">mini</item>
+        <item name="borderWidth">0dp</item>
+    </style>
+
+    <style name="HorizontalListView" parent="AppTheme">
+        <item name="android:orientation">horizontal</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="NoboButton" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="nb_radius">8dp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="nb_textSize">@dimen/font_nm</item>
+        <item name="nb_iconPadding">4dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+
+    <style name="NoboButton.Primary">
+        <item name="nb_textColor">@color/white</item>
+        <item name="nb_backgroundColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="NoboButton.White">
+        <item name="nb_textColor">@color/black</item>
+        <item name="nb_backgroundColor">@color/white</item>
+        <item name="nb_borderColor">@color/gray</item>
+        <item name="nb_borderWidth">1dp</item>
+    </style>
+
+    <style name="NoboButton.White.Small">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <style name="ScrollView">
+        <item name="android:orientation">vertical</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="TextFieldBoxes" parent="AppTheme">
+        <item name="counterTextColor">@color/white</item>
+        <item name="errorColor">@color/b_red</item>
+        <item name="helperTextColor">@color/white</item>
+        <item name="panelBackgroundColor">@color/white</item>
+        <item name="primaryColor">@color/f_pink</item>
+        <item name="hasClearButton">false</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="TextView.Regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextView.SemiBold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+</resources>

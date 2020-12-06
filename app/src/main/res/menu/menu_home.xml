@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_update_home"
+        android:title="@string/menu_update"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_whats_new_home"
+        android:title="@string/title_whats_new"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_feedback_home"
+        android:title="@string/menu_feedback"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_about_home"
+        android:title="@string/menu_about"
+        app:showAsAction="ifRoom"/>
+</menu>

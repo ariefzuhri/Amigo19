@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00CDAC</color>
+    <color name="colorPrimaryDark">#00CDAC</color>
+    <color name="colorAccent">#02AAB0</color>
+
+    <color name="black">#2A3132</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="white">#FCFDFE</color>
+
+    <!-- Green Beach -->
+    <color name="green">@color/colorPrimary</color>
+    <color name="cyan">@color/colorAccent</color>
+
+    <!--Cherry-->
+    <color name="b_red">#EB3349</color>
+    <color name="b_pink">#F45C43</color>
+
+    <!--Sunkist-->
+    <color name="c_orange">#F2994A</color>
+    <color name="c_yellow">#F2C94C</color>
+
+    <!--Amethyst-->
+    <color name="d_purple">#9D50BB</color>
+    <color name="d_blue">#6E48AA</color>
+
+    <!-- Intuitive -->
+    <color name="e_blue">#4776E6</color>
+    <color name="e_purple">#8E54E9</color>
+
+    <!--Sha la la-->
+    <color name="f_pink">#D66D75</color>
+    <color name="f_lightpink">#E29587</color>
+
+    <!--Blush-->
+    <color name="g_purple">#B24592</color>
+    <color name="g_pink">#F15F79</color>
+
+    <color name="h_blue">#2D73BD</color>
+    <color name="h_green">#15BABD</color>
+</resources>

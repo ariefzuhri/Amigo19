@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MeetAddUpdateActivity"
+    android:background="@drawable/shape_f"
+    android:padding="16dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_back_mau"
+        style="@style/FloatingActionButton"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_chevron_left_pink_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_mau"
+        style="@style/TextView.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/title_mau"
+        android:textSize="@dimen/font_lg"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back_mau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_back_mau"
+        app:layout_constraintTop_toTopOf="@+id/btn_back_mau" />
+
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:id="@+id/box_name_mau"
+        style="@style/TextFieldBoxes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:helperText="@string/box_helper_name_mau"
+        app:labelText="@string/box_name_mau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_mau"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_mau"
+        app:maxCharacters="18">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/edt_name_mau"
+            style="@style/ExtendedEditText"
+            android:hint="@string/edt_hint_name_mau"
+            android:inputType="textPersonName" />
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+        android:id="@+id/box_quantity_mau"
+        style="@style/TextFieldBoxes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:helperText="@string/box_helper_quantity_mau"
+        app:labelText="@string/box_quantity_mau"
+        app:layout_constraintEnd_toEndOf="@+id/box_name_mau"
+        app:layout_constraintStart_toStartOf="@+id/box_name_mau"
+        app:layout_constraintTop_toBottomOf="@+id/box_name_mau"
+        app:maxCharacters="6">
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/edt_quantity_mau"
+            style="@style/ExtendedEditText"
+            android:hint="@string/edt_hint_quantity_mau"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"/>
+    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+    <CheckBox
+        android:id="@+id/cb_meet_home"
+        style="@style/CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/checkbox_meet_home"
+        app:layout_constraintStart_toStartOf="@+id/box_name_mau"
+        app:layout_constraintTop_toBottomOf="@+id/box_quantity_mau" />
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_add_mau"
+        style="@style/NoboButton.White"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/box_name_mau"
+        app:layout_constraintTop_toBottomOf="@+id/cb_meet_home"
+        app:nb_text="@string/add"/>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_delete_mau"
+        style="@style/NoboButton.White"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_mau"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_mau"
+        app:nb_text="@string/delete"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

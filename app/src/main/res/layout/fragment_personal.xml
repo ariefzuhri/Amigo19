@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PersonalFragment"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_background_personal"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/shape_reverse">
+
+        <TextView
+            android:id="@+id/tv_title_personal"
+            style="@style/TextView.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/title_personal"
+            android:textSize="@dimen/font_lg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_setup_location_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_edit_location_white_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title_personal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_title_personal"
+            android:contentDescription="@string/cd_location_personal"/>
+
+        <TextView
+            android:id="@+id/tv_name_personal"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_person_white_24dp"
+            android:drawablePadding="8dp"
+            android:text="@string/loading"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_personal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_personal" />
+
+        <TextView
+            android:id="@+id/tv_email_personal"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_email_white_24dp"
+            android:drawablePadding="8dp"
+            android:text="@string/loading"
+            app:layout_constraintStart_toStartOf="@+id/tv_name_personal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_personal" />
+
+        <TextView
+            android:id="@+id/tv_location_personal"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_location_city_white_24dp"
+            android:drawablePadding="8dp"
+            android:text="@string/loading"
+            app:layout_constraintStart_toStartOf="@+id/tv_name_personal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email_personal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_background_personal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_reverse"
+        android:layout_below="@+id/layout_background_personal"/>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_background_personal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/include_assessment_personal"
+                layout="@layout/layout_assessment_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/include_tips_personal"
+                layout="@layout/layout_tips_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include_assessment_personal" />
+
+            <TextView
+                android:id="@+id/tv_subtitle_suggestion_personal"
+                style="@style/TextView.SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/subtitle_suggestion_personal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_md"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include_tips_personal" />
+
+            <TextView
+                android:id="@+id/tv_suggestion_personal"
+                style="@style/TextView.Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/loading"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_nm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_subtitle_suggestion_personal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_suggestion_personal" />
+
+            <TextView
+                android:id="@+id/tv_tutorial_suggestion_personal"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/tutorial_suggestion_personal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_sm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_suggestion_personal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_suggestion_personal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/include_assessment_personal"
+                app:layout_constraintStart_toStartOf="@+id/include_assessment_personal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tutorial_suggestion_personal"
+                tools:listitem="@layout/item_suggestion_personal" />
+
+            <TextView
+                android:id="@+id/tv_sign_out_personal"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/sign_out_personal"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_subtitle_suggestion_personal"
+                app:layout_constraintTop_toBottomOf="@+id/rv_suggestion_personal" />
+
+            <TextView
+                android:id="@+id/tv_reassessment_personal"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/reassessment_personal"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/tv_sign_out_personal"
+                app:layout_constraintTop_toTopOf="@+id/tv_sign_out_personal" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

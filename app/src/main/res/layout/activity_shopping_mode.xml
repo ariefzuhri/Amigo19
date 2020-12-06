@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.ShoppingModeActivity"
+    android:background="@drawable/shape_h"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:keepScreenOn="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_icon_title_shopping_mode"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_security_white_56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_shopping_mode"
+        style="@style/TextView.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_shopping_mode"
+        android:textSize="@dimen/font_lg"
+        app:layout_constraintEnd_toEndOf="@+id/img_icon_title_shopping_mode"
+        app:layout_constraintStart_toStartOf="@+id/img_icon_title_shopping_mode"
+        app:layout_constraintTop_toBottomOf="@+id/img_icon_title_shopping_mode" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_icon_status_shopping_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_assistant_white_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_shopping_mode" />
+
+    <TextView
+        android:id="@+id/tv_status_shopping_mode"
+        style="@style/TextView.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/loading"
+        android:textSize="@dimen/font_nm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_icon_status_shopping_mode"
+        app:layout_constraintTop_toTopOf="@+id/img_icon_status_shopping_mode" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_shopping_mode"
+        style="@style/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next_shopping_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status_shopping_mode">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_meet_shopping_mode"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meet_shopping_mode"
+                android:textSize="@dimen/font_nm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_meet_shopping_mode"
+                style="@style/HorizontalListView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_meet_shopping_mode"
+                app:layout_constraintTop_toBottomOf="@+id/tv_meet_shopping_mode"
+                tools:listitem="@layout/item_meet"
+                android:overScrollMode="never"/>
+
+            <TextView
+                android:id="@+id/tv_checklist_shopping_mode"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="4dp"
+                android:text="@string/checklist_shopping_mode"
+                android:textSize="@dimen/font_nm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_meet_shopping_mode"
+                app:drawableStartCompat="@drawable/ic_tag_faces_white_24dp" />
+
+            <include
+                android:id="@+id/include_checklist_shopping_mode"
+                layout="@layout/layout_checklist_shopping_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/rv_meet_shopping_mode"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_checklist_shopping_mode"
+                app:layout_constraintTop_toBottomOf="@+id/tv_checklist_shopping_mode" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_next_shopping_mode"
+        style="@style/NoboButton.Primary"
+        android:layout_width="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_exit_shopping_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:nb_text="@string/loading"/>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_exit_shopping_mode"
+        style="@style/NoboButton.White"
+        android:layout_width="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:nb_text="@string/exit_shopping_mode" />
+</androidx.constraintlayout.widget.ConstraintLayout>

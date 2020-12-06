@@ -1,0 +1,506 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Amigo-19</string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_personal">Personal</string>
+    <string name="menu_statistic">Statistik</string>
+    <string name="menu_education">Edukasi</string>
+    <string name="loading">Memuat…</string>
+    <string name="loading_number">0</string>
+    <string name="unit_countdown_home">hari lagi</string>
+    <string name="desc_countdown_home">jangan lupa membeli kebutuhan pokok</string>
+    <string name="subtitle_home">Kondisi saat ini di daerah Anda</string>
+    <string name="stats_infected">terinfeksi &lt;b>%1$s&lt;/b></string>
+    <string name="stats_patient">dirawat &lt;b>%1$s&lt;/b></string>
+    <string name="stats_recovered">sembuh &lt;b>%1$s&lt;/b></string>
+    <string name="stats_death">meninggal &lt;b>%1$s&lt;/b></string>
+    <string name="title_statistic">Statistik</string>
+    <string name="title_education">Pusat Edukasi</string>
+    <string name="title_personal">Data Akun Anda</string>
+    <string name="global_statistic">Global</string>
+    <string name="indonesia_statistic">Indonesia</string>
+    <string name="last_update_statistic">Diperbarui hari ini pukul %1$s</string>
+    <string name="title_statistic_detail">Statistik %1$s</string>
+    <string name="next_intro">Lanjut</string>
+    <string name="skip_intro">Lewati</string>
+    <string name="title_about">Tentang aplikasi</string>
+    <string name="app_developer">oleh ariefzuhri</string>
+    <string name="app_version">versi %1$s</string>
+    <string name="title_login">Tautkan Akun</string>
+    <string name="google_login">Lanjutkan dengan Google</string>
+    <string name="intro_title_1">Ayo #dirumahaja</string>
+    <string name="intro_desc_1">Amigo-19 akan menjadi temanmu dan siap membantu agar keluargamu gak sering keluar rumah buat beli kebutuhan pokok. Ada juga fitur ekstra, daftar belanja, agar kamu gak kelupaan apa yang mau dibeli.</string>
+    <string name="intro_title_2">Saran Personalisasi</string>
+    <string name="intro_desc_2">Saran dan tips terbaik dari kami buat kamu terkait belanja kebutuhan pokok keluarga sesuai dengan hasil asesmen yang nanti akan kamu isi.</string>
+    <string name="intro_title_3">Statistik Terbaru</string>
+    <string name="intro_desc_3">Angka penyebaran Covid-19 terbaru dan kamu bisa dengan mudah melihat statistik daerahmu. Dari statistik itu, kita semua pasti berharap keadaan bisa lebih baik.</string>
+    <string name="intro_title_4">Pusat Edukasi</string>
+    <string name="intro_desc_4">Mengenal korona virus, termasuk upaya pencegahannya, bahkan kamu bakal kenal dari sisi positifnya. Kamu juga bisa melihat daftar rumah sakit rujukan Covid-19.</string>
+    <string name="end_intro">Mulai</string>
+    <string name="infected">Terinfeksi</string>
+    <string name="recovered">Sembuh</string>
+    <string name="death">Meninggal</string>
+    <string name="patient">Dirawat</string>
+    <string name="menu_about">Tentang</string>
+    <string name="menu_feedback">Kirim saran</string>
+    <string name="title_sla">Setelan Lokasi</string>
+    <string name="subtitle_sla">Lokasi Anda saat ini</string>
+    <string name="loading_nothing">-</string>
+    <string name="title_cla">Pilih %1$s</string>
+    <string name="title_assessment_personal">Hasil asesmen</string>
+    <string name="desc_next_overview_home">belanja berikutnya</string>
+    <string name="desc_last_overview_home">terakhir kali belanja</string>
+    <string name="note_pre_assessment">Catatan:</string>
+    <string name="note_1_pre_assessment">Hasil asesmen akan digunakan agar kami dapat tau bagaimana kondisi Anda saat ini</string>
+    <string name="note_2_pre_assessment">Maksud kebutuhan pokok adalah kebutuhan yang harus ada, seperti bahan makanan/makanan jadi, termasuk minuman, bahan perawatan tubuh (vitamin, obat-obatan, sabun, pasta gigi), dan juga kebutuhan hewan timangan Anda</string>
+    <string name="note_4_pre_assessment">Kata \'Anda\' akan mewakili orang-orang yang tinggal serumah dengan Anda</string>
+    <string name="note_3_pre_assessment">Mohon dijawab sesuai dengan kondisi Anda dalam 7 hari terakhir</string>
+    <string name="start_assessment_pre_assessment">Mulai asesmen</string>
+    <string name="title_pre_assessment">Halo, %1$s…</string>
+    <string name="end_assessment">Selesai</string>
+    <string name="day_full_date">%1$s, %2$s</string>
+    <string name="result_1_assessment">Anda bisa belanja kembali kebutuhan pokok Anda setiap %1$d hari setelah terakhir kali belanja</string>
+    <string name="result_2_assessment">Harap perhitungkan bahwa belanja Anda dapat mencukupi hingga %1$d hari ke depan</string>
+    <string name="result_3_assessment">Anda %1$s kesulitan untuk memenuhi kebutuhan pokok. Kami memiliki saran terbaik untuk Anda.</string>
+    <string name="rationale_location">Untuk mendeteksi lokasi Anda, kami membutuhkan izin penggunaan lokasi.</string>
+    <string name="subtitle_education">Pilih topik edukasi</string>
+    <string name="dialog_done_assessment">Asesmen telah selesai. Anda dapat menyimpannya dan hasil dapat dilihat pada tampilan personal.</string>
+    <string name="dialog_ok">Oke</string>
+    <string name="dialog_yes">Ya</string>
+    <string name="dialog_cancel">Batal</string>
+    <string name="dialog_sign_out_personal">Apakah Anda yakin ingin keluar dan mengganti akun?</string>
+    <string name="dialog_reassessment_personal">Apakah Anda yakin ingin menghapus hasil asesmen Anda (termasuk riwayat tanggal belanja)?</string>
+    <string name="dialog_save_assessment">Simpan dan Mulai</string>
+    <string name="dialog_province_statistic">%1$s\n\nTerinfeksi: %2$s jiwa\nDirawat: %3$s jiwa\nSembuh: %4$s jiwa\nMeninggal: %5$s jiwa</string>
+    <string name="dialog_info_statistic">Ketuk kotak statistik untuk lihat rinciannya</string>
+    <string name="meet_home">Daftar belanja %1$s</string>
+    <string name="title_mau">Tambah daftar</string>
+    <string name="dialog_next_meet">Apakah Anda sudah belanja hari ini?</string>
+    <string name="dialog_last_meet">Anda terakhir belanja pada %1$s atau %2$d hari yang lalu</string>
+    <string name="dialog_undone">Belum</string>
+    <string name="dialog_done">Sudah</string>
+    <string name="dialog_delay">Tunda besok</string>
+    <string name="dialog_no">Tidak</string>
+    <string name="box_name_mau">Nama belanjaan</string>
+    <string name="box_quantity_mau">Banyaknya</string>
+    <string name="edt_hint_quantity_mau">100</string>
+    <string name="edt_hint_name_mau">Wortel</string>
+    <string name="box_helper_name_mau">Ketik nama belanjaan dengan singkat</string>
+    <string name="box_helper_quantity_mau">Ketik angka saja, tanpa satuan</string>
+    <string name="checkbox_meet_home">Beri tanda ceklis</string>
+    <string name="credit_about">Desain vektor oleh freepik\nAPI Kawalcorona.com oleh Teguh Aprianto\nMateri edukasi oleh Kemenkominfo x GNFI\n\nSaran dan rekomendasi belanja oleh pakar dari Centers for Disease Control Atlanta, North Carolina State University, dan IPB University</string>
+    <string name="cd_logo_about">Ini adalah logo Amigo-19</string>
+    <string name="title_assessment">Mengisi asesmen kebutuhan pokok</string>
+    <string name="abroad_cla">Saya berada di luar negeri</string>
+    <string name="add">Tambah</string>
+    <string name="delete">Hapus</string>
+    <string name="desc_pre_assessment">Untuk lebih memahami Anda, ayo ikuti asesmennya.</string>
+    <string name="save">Simpan</string>
+    <string name="cd_menu_home">Menu beranda</string>
+    <string name="cd_location_personal">Setelan lokasi</string>
+    <string name="subtitle_suggestion_personal">Saran untuk Anda</string>
+    <string name="sign_out_personal">Ganti akun</string>
+    <string name="reassessment_personal">Ulangi asesmen</string>
+    <string name="cd_info_statistic">Tutorial statistik</string>
+    <string name="cd_background_education_detail">Ilustrasi edukasi</string>
+    <string name="cd_add_meet_home">Tambah daftar belanja</string>
+    <string name="subtitle_setting_sla">Akses lokasi pengguna</string>
+    <string name="desc_setting_sla">Gunakan GPS/jaringan untuk deteksi lokasi saya</string>
+    <string name="dialog_no_data">Belum ada data.</string>
+    <string name="info_overview_home">Tutorial pengelola waktu belanja</string>
+    <string name="title_update_mau">Perbarui daftar</string>
+    <string name="title_add_mau">Tambah daftar</string>
+    <string name="dialog_delete_mau">Apakah Anda yakin ingin menghapus belanjaan ini?</string>
+    <string name="dialog_cancel_update_mau">Anda belum menyimpan perubahan info belanjaan. Apakah Anda yakin ingin membatalkannya?</string>
+    <string name="dialog_cancel_add_mau">Anda belum menyimpan penambahan daftar belanja. Apakah Anda yaking ingin membatalkannya?</string>
+    <string name="snackbar_not_null">Semua isian tidak boleh kosong</string>
+    <string name="snackbar_not_max">Semua isian tidak boleh melebihi batas karakter</string>
+    <string name="snackbar_fail_location">Gagal mendapatkan lokasi</string>
+    <string name="snackbar_add_meet">Daftar belanja berhasil ditambah</string>
+    <string name="snackbar_update_meet">Daftar belanja berhasil diperbarui</string>
+    <string name="snackbar_delete_meet">Daftar belanja berhasil dihapus</string>
+    <string name="snackbar_fail_login">Gagal menautkan akun</string>
+    <string name="snackbar_fail_auth_login">Gagal mengautentikasi akun</string>
+    <string name="info_shopping_mode_home">Apa itu mode pergi belanja?</string>
+    <string name="dialog_understand">Saya paham</string>
+    <string name="dialog_info_overview_home">Pada tampilan ini, Anda bisa lihat kapan terakhir kali dan jadwal berikutnya Anda belanja.\n\nJangan lupa konfirmasi bahwa Anda sudah belanja pada hari ini agar data pengguna tetap terbaru.\n\nCaranya, ketuk kotak tanggal berwarna biru dan pilih opsi yang tepat.</string>
+    <string name="dialog_info_shopping_mode_home">Mode pergi belanja akan memandu Anda ketika sebelum berangkat, saat belanja, dan setelah kembali.\n\nDengan menghidupkan mode ini, kami berusaha memastikan bahwa Anda akan aman selama di luar rumah untuk pergi belanja kebutuhan.\n\nKetika Anda menghidupkan mode ini, aplikasi akan langsung mengalihkan Anda ke sebuah tampilan khusus yang siap memandu.</string>
+    <string name="title_shopping_mode">Mode Pergi Belanja</string>
+    <string name="status_shopping_mode">Status Anda: %1$s</string>
+    <string name="meet_shopping_mode">Daftar belanja Anda</string>
+    <string name="checklist_shopping_mode">Pastikan Anda sudah siap:</string>
+    <string name="title_feedback">Kirim saran</string>
+    <string name="menu_update">Cek pembaruan</string>
+    <string name="yeay">Yeay!!</string>
+    <string name="dialog_finish_shopping_mode">Anda sudah kembali bersih dan kebutuhan Anda sudah terpenuhi.\n\nJangan lupa konfirmasi bahwa Anda sudah belanja pada hari ini dengan cara mengetuk kotak tanggal berwarna biru di tab beranda.</string>
+    <string name="finish_1_shopping_mode">Saya siap berangkat</string>
+    <string name="finish_2_shopping_mode">Saya sudah kembali</string>
+    <string name="finish_3_shopping_mode">Saya sudah bersih-bersih</string>
+    <string name="dialog_start_shopping_mode">Apakah Anda ingin menghidupkan mode pergi belanja?</string>
+    <string name="dialog_setup_location_home">Anda belum mengatur lokasi Anda. Ayo kita menuju setelan.</string>
+    <string name="dialog_delete_meet">Apakah Anda yakin ingin menghapus belanjaan ini?</string>
+    <string name="dialog_exit_shopping_mode">Apakah Anda yakin ingin keluar dari mode pergi belanja?</string>
+    <string name="title_shopping_mode_home">Mode Pergi Belanja</string>
+    <string name="select_location_sla">Pilih lokasi</string>
+    <string name="hospital_education">Daftar RS Rujukan Covid-19</string>
+    <string name="exit_shopping_mode">Matikan modus</string>
+    <string name="meet_detail_home">Daftar belanja</string>
+    <string name="start_shopping_mode_home">Hidupkan</string>
+    <string name="snackbar_no_location_sla">Mohon untuk menyetel lokasi terlebih dahulu</string>
+    <string name="snackbar_no_potrait_home">Untuk memberikan pengalaman terbaik, mohon ubah rotasi layar ke potret</string>
+    <string name="download">Unduh</string>
+    <string name="state">Negara</string>
+    <string name="province">Provinsi</string>
+    <string name="today">Hari ini</string>
+    <string name="future">Yang akan datang</string>
+    <string name="close">Tutup</string>
+    <string name="title_update">Pembaruan tersedia v%1$s</string>
+    <string name="desc_tutorial_update">Ketuk tombol di bawah untuk mendapatkan pembaruan penting</string>
+    <string name="desc_uptodate_update">Aplikasimu sudah versi terbaru</string>
+    <string name="tutorial_suggestion_personal">Ketuk kotak saran untuk lihat rinciannya</string>
+    <string name="notif_title_shopping_mode">Mode Pergi Belanja: ON</string>
+    <string name="notif_desc_shopping_mode">Ketuk untuk buka tampilan modus dan perbarui kondisi Anda</string>
+    <string name="unchecked">Hapus tanda</string>
+    <string name="checked">Beri tanda</string>
+    <string name="good_morning">Selamat pagi</string>
+    <string name="good_afternoon">Selamat siang</string>
+    <string name="good_evening">Selamat sore</string>
+    <string name="good_night">Selamat malam</string>
+    <string name="notif_channel_id_fcm">fcm_default_channel</string>
+    <string name="notif_channel_id_shopping_mode">shopping_mode_channel</string>
+    <string name="title_whats_new">Apa yang baru</string>
+    <string name="version_whats_new">Versi %1$s (%2$s)</string>
+
+    <!-- MULAI::BAGIAN MOTIVASI -->
+    <string-array name="motivation">
+        <item>Ayo jadi pahlawan dengan #dirumahaja</item>
+        <item>Jangan lupa CTPS (cuci tangan pakai sabun)</item>
+        <item>Lawan korona dengan hidup sehat</item>
+        <item>Mari kita bakar semangat hehe</item>
+        <item>Gunakan masker kain saat keluar rumah</item>
+        <item>Tetap silaturahmi daring meski #jagajarak</item>
+        <item>Kerja, belajar, dan ibadah dari rumah</item>
+        <item>Tetap #dirumahaja untuk bantu tenaga medis</item>
+        <item>Anda adalah garda terdepan dalam pencegahan</item>
+        <item>Lawan kebosanan dengan tetap produktif</item>
+        <item>Disiplin yang tinggi adalah kunci pandemi berakhir</item>
+    </string-array>
+    <!-- SELESAI::BAGIAN MOTIVASI -->
+
+    <!-- MULAI::BAGIAN TIPS BELANJA -->
+    <string name="title_tips_personal">Tips Belanja</string>
+    <string name="title_tips_1_personal">Jadilah pembeli yang bijak</string>
+    <string name="desc_tips_1_personal">Belilah kebutuhan pokok seperlunya agar masyarakat lain juga bisa memenuhi kebutuhannya. Perhitungkan juga dengan teliti bahwa kebutuhan Anda dapat terpenuhi sampai pada belanja berikutnya.</string>
+    <string name="title_tips_2_personal">Perhatikan himbauan berikut</string>
+    <string name="desc_tips_2_personal">Gunakan masker kain dan #jagajarak 2 meter. Pastikan Anda sehat dan jangan membawa anggota keluarga lain untuk pergi berbelanja. Selain itu, sebaiknya belanjalah pada jam-jam sepi.</string>
+    <!-- SELESAI::BAGIAN TIPS BELANJA -->
+
+    <!-- MULAI::BAGIAN ASESMEN -->
+    <string-array name="question_assessment">
+        <item>Termasuk Anda, berapa orang yang tinggal dalam serumah?</item> <!--1 = 0-3-->
+        <item>Rata-rata, berapa kali dalam sehari Anda makan?</item> <!--2 = 0-3-->
+        <item>Seberapa sering Anda memasak makanan sendiri?</item> <!--3 = 0-3-->
+
+        <item>Apakah kondisi di kampung Anda sudah menerapkan karantina wilayah lokal?</item> <!--4 = 0-4-->
+        <item>Apakah Anda kesulitan memperoleh kebutuhan pokok di wilayah Anda (dalam radius 5 km)?</item> <!--5 = 0-4-->
+
+        <item>Sebelum terjadi pandemi, seberapa sering Anda membeli kebutuhan pokok?</item> <!--6 = 0-3-->
+        <item>Sebelum terjadi pandemi, dalam sekali beli, berapa banyak kebutuhan pokok yang dibeli?</item> <!--7 = 0-3-->
+
+        <item>Kira-kira, kapan lagi Anda akan membeli kebutuhan pokok?</item> <!--8-->
+        <item>Apakah Anda menunggu kebutuhan pokok habis baru kemudian membeli lagi?</item> <!--9-->
+    </string-array>
+
+    <string-array name="option_assessment">
+        <item>Hanya saya</item>
+        <item>2–3</item>
+        <item>4–5</item>
+        <item>Lebih dari 5</item>
+
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>Lebih dari 4</item>
+
+        <item>Selalu</item>
+        <item>Sering</item>
+        <item>Jarang</item>
+        <item>Tidak pernah</item>
+
+        <item>Tidak</item> <!--0 poin-->
+        <item>Ya, sedikit ketat</item> <!--2 poin-->
+        <item>Ya, cukup ketat</item> <!--4 poin-->
+        <item>Ya, sangat ketat</item> <!--6 poin-->
+
+        <item>Tidak kesulitan</item> <!--0 poin-->
+        <item>Sedikit kesulitan</item> <!--2 poin-->
+        <item>Cukup Kesulitan</item> <!--4 poin-->
+        <item>Sangat kesulitan</item> <!--6 poin-->
+
+        <item>Setiap 1 minggu sekali</item> <!--0 poin-->
+        <item>Setiap 4–6 hari sekali</item> <!--0 poin-->
+        <item>Setiap 2–3 hari sekali</item> <!--1 poin-->
+        <item>Setiap hari sekali</item> <!--1 poin-->
+
+        <item>Sedikit</item> <!--0 poin-->
+        <item>Lumayan</item> <!--0 poin-->
+        <item>Banyak</item> <!--1 poin-->
+        <item>Sangat banyak</item> <!--1 poin-->
+
+        <item>Hari ini</item>
+        <item>1 atau 2 hari ke depan</item>
+        <item>3 atau 4 ke depan</item>
+        <item>Lebih dari 4 hari ke depan</item>
+
+        <item>Tidak pernah</item>
+        <item>Kadang-kadang</item>
+        <item>Sering</item>
+        <item>Selalu</item>
+    </string-array>
+
+    <string-array name="level_meet"> <!-- Total poin 20, maks 27 -->
+        <item>tidak</item> <!-- Poin 0-5 -->
+        <item>sedikit</item> <!-- Poin 6-10 -->
+        <item>cukup</item> <!-- Poin 11-15 -->
+        <item>sangat</item> <!-- Poin 16-20 -->
+    </string-array>
+
+    <string-array name="personal_suggestion">
+        <item>Cari grup kuliner Facebook di kota Anda</item> <!--1-->
+        <item>Belanja kebutuhan melalui online shop</item> <!--2-->
+        <item>Hindari belanja ketika kebutuhan benar-benar habis</item> <!--3-->
+        <item>Pesan bahan makanan melalui tukang sayur di kampung Anda</item> <!--4-->
+        <item>Beli bahan makanan yang dapat tahan lama</item> <!--5-->
+        <item>Beli makanan dengan porsi lebih banyak untuk jam makan selanjutnya</item> <!--6-->
+        <item>Pesan makanan melalui layanan antar</item> <!--7-->
+        <!-- Semua dapet -->
+        <item>Sediakan stok makanan instan untuk jaga-jaga</item>
+        <item>Temukan ide memasak melalui aplikasi seperti Cookpad</item>
+        <item>Jika Anda punya hewan timangan yang sedang tidak baik, jangan ragu membawanya ke dokter hewan</item>
+    </string-array>
+
+    <string-array name="personal_suggestion_detail">
+        <item>Cari grup/komunitas kuliner Facebook di kota Anda, seperti grup "Wisata Kuliner Yogyakarta", yang dapat membantu Anda dalam memenuhi kebutuhan pokok.</item>
+        <item>Belanja kebutuhan melalui online shop, seperti Tokopedia atau Shopee. Sebelum membeli, carilah toko terpercaya dengan melihat reputasi/bintang minimal 4. Anda juga bisa memanfaatkan kupon diskon yang tersedia banyak.</item>
+        <item>Sebaiknya jangan belanja ketika kebutuhan benar-benar habis.</item>
+        <item>Pesan bahan makanan melalui tukang sayur di kampung Anda dengan mengomunikasikannya melalui WhatsApp atau semacamnya. Ini akan membantu Anda untuk menghindari keramaian.</item>
+        <item>Beli bahan makanan yang dapat tahan lama, seperti kentang, wortel, kubis, telur, buah, tempe, daging yang dibekukan, dll. Olah juga jadi makanan yang tahan lama, seperti ayam ungkep.</item>
+        <item>Beli makanan dengan porsi lebih banyak agar dapat di simpan untuk jam makan selanjutnya. Ini juga menghemat ongkos kirim layanan antar.</item>
+        <item>Pesan makanan melalui layanan antar, seperti GoFood. Manfaatkan kupon jika ada.</item>
+        <!-- Semua dapet -->
+        <item>Sediakan stok makanan instan yang tahan lama untuk jaga-jaga, seperti makanan beku, mi instan, sarden kaleng, kornet kaleng, dll.</item>
+        <item>Jika Anda bingung ingin masak apa, Anda bisa menemukan ide masakan melalui aplikasi Cookpad, Yummy, atau Endeus yang dapat diunduh di Play Store.</item>
+        <item>Hewan timangan Anda juga membutuhkan pertolongan. Jadi, jangan ragu ya membawanya ke dokter hewan. Jangan lupa untuk tetap menggunakan masker dan jaga jarak.</item>
+    </string-array>
+    <!-- SELESAI::BAGIAN ASESMEN -->
+
+    <!-- MULAI::BAGIAN MODE PERGI BELANJA -->
+    <string-array name="status_shopping_mode">
+        <item>Bersiap untuk berangkat</item>
+        <item>Sedang belanja kebutuhan</item>
+        <item>Selesai belanja, sedang bersih-bersih</item>
+    </string-array>
+
+    <string-array name="first_step_shopping_mode">
+        <item>Jangan lupa perbarui daftar belanja</item>
+        <item>Gunakan masker kain</item>
+        <item>Bawa tas belanja sendiri yang ramah lingkungan</item>
+        <item>Bawa hand sanitizer (opsional)</item>
+        <item>Siapkan metode pembayaran cashless (opsional)</item>
+    </string-array>
+
+    <string-array name="second_step_shopping_mode">
+        <item>Gunakan hand sanitizer saat masuk-keluar toko</item>
+        <item>Fokus pada daftar belanja</item>
+        <item>Jaga jarak sekitar 2 meter</item>
+        <item>Jangan menyentuh barang yang tidak dibeli</item>
+        <item>Jangan menyentuh wajah</item>
+    </string-array>
+
+    <string-array name="third_step_shopping_mode">
+        <item>Cuci tangan pakai sabun dengan air mengalir</item>
+        <item>Ganti dan cuci semua pakaian</item>
+        <item>Mandi</item>
+        <item>Bersihkan masker kain</item>
+        <item>Bersihkan makanan dengan air mengalir</item>
+    </string-array>
+    <!-- SELESAI::BAGIAN MODE PERGI BELANJA -->
+
+    <!-- MULAI::BAGIAN EDUKASI -->
+    <string-array name="topic_education">
+        <item>Mengenal Covid-19</item>
+        <item>Gejala Infeksi Virus Korona</item>
+        <item>Cara Virus Korona Menyebar</item>
+        <item>Langkah Mencegah Penyebaran Virus Korona</item>
+        <item>Cara Menggunakan Masker</item>
+        <item>Cara Melepas Masker</item>
+        <item>Mencegah Covid-19 dengan Germas</item>
+        <item>Sisi Positif Si Korona</item>
+        <item>Hentikan Stigma Negatif pada Pasien</item>
+    </string-array>
+
+    <string-array name="desc_education">
+        <item>Mengenal apa itu Covid-19 dan virus yang menyebabkannya</item>
+        <item>Mengenal gejala-gejala yang dimiliki pasien Covid-19</item>
+        <item>Memahami bagaimana virus korona dapat menyebar sehingga kita dapat terhindar dari Covid-19</item>
+        <item>Langkah-langkah sederhana yang wajib dilakukan agar terhindar Covid-19</item>
+        <item>Memahami bagaimana cara menggunakan masker yang tepat</item>
+        <item>Memahami bagaimana cara melepas masker yang tepat</item>
+        <item>Upaya pencegahan Covid-19 melalui Gerakan Masyarakat Sehat</item>
+        <item>Mengenal pandemi Covid-19 dari sudut pandang berbeda</item>
+        <item>Memahami mengapa kita perlu bersimpati pada pasien atau perawat Covid-19</item>
+    </string-array>
+
+    <string-array name="content_education">
+        <item>Virus korona adalah virus yang menyerang sistem pernapasan. Penyakit yang diakibatkan virus corona jenis 2019-nCoV/SARS-CoV-2 disebut Covid-19.</item>
+        <item>Virus korona berbentuk seperti paku dan mahkota, sesuai dengan namanya. Selain itu, virus korona hanya bisa bertahan hingga suhu 56°C.</item>
+        <item>Belum ada obat yang dapat menyembuhkan Covid-19. Pengobatan terbaik saat ini adalah dengan meningkatkan daya tahan tubuh.</item>
+
+        <item>Hari pertama mengalami demam, kelelahan otot, nyeri otot, batuk kering, diare/mual. Hari ke-5 ada yang mengalami kesulitan bernapas pada mereka yang rentan.</item>
+        <item>Hari ke-8 mengalami sindrom gangguan pernapasan akut. Hari ke-10 mengalami gangguan pada perut dan kehilangan nafsu makan. Pada rentang waktu ini, kesembuhan pasien bergantung pada imunitasnya.</item>
+        <item>Beberapa pasien Covid-19 tidak menunjukkan gejala. Oleh karena itu, WHO menyarankan pemakaian masker pada semua orang.</item>
+
+        <item>Melalui droplet (percikan cairan) saat batuk/bersin. Tidak melalui udara.</item>
+        <item>Ada kontak dekat (bersentuhan) dengan orang yang terinfeksi.</item>
+        <item>Kontak dengan permukaan atau benda yang terkontaminasi.</item>
+
+        <item>Rajin menuci tangan dengan sabun dan air mengalir. Hindari juga menyentuh wajah.</item>
+        <item>#dirumahaja jika tidak ada kepentingan. Jika keluar rumah, gunakan masker kain dan #jagajarak. Jangan lupa untuk tetap bersilaturahmi melalui media daring.</item>
+        <item>Tutup mulut dengan tisu/siku ketika bersin. Buka pintu dorong di tempat umum juga menggunakan siku.</item>
+
+        <item>Cuci tangan pakai sabun sebelum menggunakan masker</item>
+        <item>Saat menggunakan masker, pastikan tidak ada celah antara permukaan wajah dengan masker.</item>
+        <item>Jangan sentuh bagian depan masker saat menggunakannya. Jika tersentuh, segera cuci tangan.</item>
+
+        <item>Lepas masker dengan mencopot tali dan menyentuh hanya bagian dalam masker.</item>
+        <item>Cuci bersih masker dengan deterjen, jemur kering, dan gunakan setrika. Jika itu masker sekali pakai, rusak masker dengan gunting dan buang ke tempat sampah.</item>
+        <item>Cuci tangan pakai sabun dengan air mengalir.</item>
+
+        <item>Makan makanan dengan gizi seimbang serta olahraga dan istirahat cukup.</item>
+        <item>Tidak merokok, menggunakan masker, dan mencuci tangan dengan sabun.</item>
+        <item>Masak makanan sampai matang sempurna dan menjaga kebersihan lingungan. Jika terjadi demam dan sesak napas, hubungi fasilitas kesehatan terdekat.</item>
+
+        <item>Dibalik musibah pasti ada hikmah yang dapat kita ambil, lho! Termasuk musibah pandemi Covid-19 ini. Apa saja ya dampak positif yang dibawa virus ini?</item>
+        <item>Lingkungan menjadi bersih, sampah berkurang, bahkan kualitas udara segar bertambah tinggi karena polusi yang diakibatkan aktivitas masyarakat berkurang.</item>
+        <item>Menciptakan budaya hidup sehat dengan selalu menjaga kesehatan dan kebersihan, mulai dari makan makanan yang sehat, berolahraga, sampai rajin cuci tangan pakai sabun.</item>
+
+        <item>Stigma yang diberikan dapat berdampak negatif bagi saudara kita, seperti merusak semangat dan menyakiti kejiwaan mereka.</item>
+        <item>Anda juga tidak perlu khawatir terhadap pemakaman jenazah dari pasien. Pemakanan akan ditangani melalui protokol yang ketat oleh petugas sehingga virus tidak akan menyebar.</item>
+        <item>Lalu apa yang harus kita lakukan? Memberi semangat dan dukungan bagi mereka yang terdampak. Jadi, mari kita bersimpati pada saudara kita untuk bersinergi melawan virus korona :D</item>
+    </string-array>
+
+    <integer-array name="image_education">
+        <item>@drawable/edu_1</item>
+        <item>@drawable/edu_2</item>
+        <item>@drawable/edu_3</item>
+
+        <item>@drawable/edu_4</item>
+        <item>@drawable/edu_5</item>
+        <item>@drawable/edu_6</item>
+
+        <item>@drawable/edu_7</item>
+        <item>@drawable/edu_8</item>
+        <item>@drawable/edu_9</item>
+
+        <item>@drawable/edu_10</item>
+        <item>@drawable/edu_11</item>
+        <item>@drawable/edu_12</item>
+
+        <item>@drawable/edu_13</item>
+        <item>@drawable/edu_14</item>
+        <item>@drawable/edu_15</item>
+
+        <item>@drawable/edu_16</item>
+        <item>@drawable/edu_17</item>
+        <item>@drawable/edu_18</item>
+
+        <item>@drawable/edu_19</item>
+        <item>@drawable/edu_20</item>
+        <item>@drawable/edu_21</item>
+
+        <item>@drawable/edu_22</item>
+        <item>@drawable/edu_23</item>
+        <item>@drawable/edu_24</item>
+
+        <item>@drawable/edu_25</item>
+        <item>@drawable/edu_26</item>
+        <item>@drawable/edu_27</item>
+    </integer-array>
+    <!-- SELESAI::BAGIAN EDUKASI -->
+
+    <!-- MULAI::BAGIAN DATA PROVINSI -->
+    <string-array name="provinces">
+        <item>Aceh</item>
+        <item>Sumatera Utara</item>
+        <item>Sumatera Barat</item>
+        <item>Riau</item>
+        <item>Jambi</item>
+        <item>Sumatera Selatan</item>
+        <item>Bengkulu</item>
+        <item>Kepulauan Bangka Belitung</item>
+        <item>Lampung</item>
+        <item>Kepulauan Riau</item>
+        <item>DKI Jakarta</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Daerah Istimewa Yogyakarta</item>
+        <item>Jawa Timur</item>
+        <item>Banten</item>
+        <item>Bali</item>
+        <item>Nusa Tenggara Barat</item>
+        <item>Nusa Tenggara Timur</item>
+        <item>Kalimantan Barat</item>
+        <item>Kalimantan Tengah</item>
+        <item>Kalimantan Selatan</item>
+        <item>Kalimantan Timur</item>
+        <item>Kalimantan Utara</item>
+        <item>Sulawesi Utara</item>
+        <item>Sulawesi Tengah</item>
+        <item>Sulawesi Selatan</item>
+        <item>Sulawesi Tenggara</item>
+        <item>Gorontalo</item>
+        <item>Sulawesi Barat</item>
+        <item>Maluku</item>
+        <item>Maluku Utara</item>
+        <item>Papua</item>
+        <item>Papua Barat</item>
+    </string-array>
+
+    <string-array name="provinces_emblem">
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Aceh.png/320px-Flag_of_Aceh.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_North_Sumatra.svg/320px-Flag_of_North_Sumatra.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/West_Sumatra_flag.png/320px-West_Sumatra_flag.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Flag_of_Riau.svg/320px-Flag_of_Riau.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_Jambi.svg/320px-Flag_of_Jambi.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_South_Sumatra_%28vectorised%29.svg/320px-Flag_of_South_Sumatra_%28vectorised%29.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Flag_of_Bengkulu.png/320px-Flag_of_Bengkulu.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Flag_of_Bangka-Belitung.svg/320px-Flag_of_Bangka-Belitung.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Lampung.svg/320px-Flag_of_Lampung.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Riau_Islands.png/320px-Flag_of_Riau_Islands.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_Jakarta_%28vectorised%29.svg/320px-Flag_of_Jakarta_%28vectorised%29.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_West_Java_%28vectorised%29.svg/320px-Flag_of_West_Java_%28vectorised%29.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_Central_Java.svg/320px-Flag_of_Central_Java.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Flag_of_Yogyakarta.svg/320px-Flag_of_Yogyakarta.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Flag_of_East_Java.svg/320px-Flag_of_East_Java.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Banten.png/320px-Flag_of_Banten.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Flag_of_Bali.svg/320px-Flag_of_Bali.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_West_Nusa_Tenggara.svg/320px-Flag_of_West_Nusa_Tenggara.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flag_of_East_Nusa_Tenggara.svg/320px-Flag_of_East_Nusa_Tenggara.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Flag_of_West_Kalimantan.svg/320px-Flag_of_West_Kalimantan.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Flag_of_Central_Kalimantan.png/320px-Flag_of_Central_Kalimantan.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_South_Kalimantan.png/320px-Flag_of_South_Kalimantan.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_East_Kalimantan.svg/320px-Flag_of_East_Kalimantan.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_North_Kalimantan.png/320px-Flag_of_North_Kalimantan.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_North_Sulawesi.svg/320px-Flag_of_North_Sulawesi.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flag_of_Central_Sulawesi.png/320px-Flag_of_Central_Sulawesi.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_South_Sulawesi.svg/320px-Flag_of_South_Sulawesi.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Flag_of_Southeast_Sulawesi.svg/320px-Flag_of_Southeast_Sulawesi.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Gorontalo.png/320px-Flag_of_Gorontalo.png</item>
+        <item tools:ignore="TypographyDashes">https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Flag_of_West_Sulawesi.tif/lossless-page1-320px-Flag_of_West_Sulawesi.tif.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Flag_of_Maluku.png/320px-Flag_of_Maluku.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_North_Maluku.png/319px-Flag_of_North_Maluku.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Papua.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_West_Papua_%28vectorised%29.svg/320px-Flag_of_West_Papua_%28vectorised%29.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/320px-Flag_of_Indonesia.svg.png</item>
+    </string-array>
+    <!-- SELESAI::BAGIAN DATA PROVINSI -->
+</resources>

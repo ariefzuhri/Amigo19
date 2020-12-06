@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activity.EducationDetailActivity"
+    android:orientation="vertical"
+    android:id="@+id/activity_education_detail"
+    android:background="@drawable/shape_h">
+
+    <LinearLayout
+        android:id="@+id/layout_title_education_detail"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center|start"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_back_education_detail"
+            style="@style/FloatingActionButton"
+            android:src="@drawable/ic_chevron_left_cyan_24dp"/>
+
+        <TextView
+            android:id="@+id/tv_title_education_detail"
+            style="@style/TextView.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/loading"
+            android:textSize="@dimen/font_md" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_education_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:layout_below="@+id/layout_title_education_detail"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

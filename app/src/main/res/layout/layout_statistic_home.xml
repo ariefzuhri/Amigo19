@@ -1,0 +1,162 @@
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardView"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layout_background_infected_statistic_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:background="@drawable/shape_b"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_count_infected_statistic_home"
+                    style="@style/TextView.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/font_md"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginBottom="-4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_type_infected_statistic_home"
+                    style="@style/TextView.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infected"
+                    android:textSize="@dimen/font_nm" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardView"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layout_background_patient_statistic_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:background="@drawable/shape_c"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_count_patient_statistic_home"
+                    style="@style/TextView.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/font_md"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginBottom="-4dp" />
+
+                <TextView
+                    android:id="@+id/tv_type_patient_statistic_home"
+                    style="@style/TextView.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/patient"
+                    android:textSize="@dimen/font_nm" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardView"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layout_background_recovered_statistic_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:background="@drawable/shape_main"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_count_recovered_statistic_home"
+                    style="@style/TextView.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/font_md"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginBottom="-4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_type_recovered_statistic_home"
+                    style="@style/TextView.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recovered"
+                    android:textSize="@dimen/font_nm" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardView"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layout_background_death_statistic_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|end"
+                android:background="@drawable/shape_d"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_count_death_statistic_home"
+                    style="@style/TextView.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textSize="@dimen/font_md"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginBottom="-4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_type_death_statistic_home"
+                    style="@style/TextView.Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/death"
+                    android:textSize="@dimen/font_nm" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</GridLayout>

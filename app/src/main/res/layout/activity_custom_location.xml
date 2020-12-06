@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.CustomLocationActivity"
+    android:orientation="vertical"
+    android:id="@+id/activity_custom_location">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center|start"
+        android:background="@drawable/shape_main"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_back_cla"
+            style="@style/FloatingActionButton"
+            android:src="@drawable/ic_chevron_left_cyan_24dp"/>
+
+        <TextView
+            android:id="@+id/tv_title_cla"
+            style="@style/TextView.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/loading"
+            android:textSize="@dimen/font_lg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_abroad_cla"
+            style="@style/TextView.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingStart="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_abroad_cla"
+            style="@style/TextView.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/abroad_cla"
+            android:textSize="@dimen/font_nm"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar_cla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:queryHint="Ketik lokasi Anda saat ini"
+        android:focusable="false"
+        app:iconifiedByDefault="false"/>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_custom_location"/>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

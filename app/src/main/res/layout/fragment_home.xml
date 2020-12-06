@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical"
+    android:id="@+id/fragment_home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/shape_main"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_menu_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_menu_white_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_title_home"
+            android:contentDescription="@string/cd_menu_home"/>
+
+        <TextView
+            android:id="@+id/tv_title_home"
+            style="@style/TextView.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/loading"
+            android:textSize="@dimen/font_md"
+            app:layout_constraintEnd_toStartOf="@+id/btn_menu_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_motivation_home"
+            style="@style/TextView.Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textSize="@dimen/font_nm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_home"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_home" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_background_home"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/shape_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_countdown_home"
+                style="@style/TextView.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/loading_number"
+                android:textSize="@dimen/font_xxl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_background_home" />
+
+            <TextView
+                android:id="@+id/tv_unit_countdown_home"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="14dp"
+                android:text="@string/unit_countdown_home"
+                android:textSize="@dimen/font_nm"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_countdown_home"
+                app:layout_constraintStart_toEndOf="@+id/tv_countdown_home" />
+
+            <TextView
+                android:id="@+id/tv_desc_countdown_home"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_countdown_home"
+                android:textSize="@dimen/font_nm"
+                app:layout_constraintStart_toStartOf="@+id/tv_countdown_home"
+                app:layout_constraintTop_toBottomOf="@+id/tv_unit_countdown_home" />
+
+            <ImageButton
+                android:id="@+id/btn_info_overview_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/info_overview_home"
+                android:src="@drawable/ic_info_white_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_background_home"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <include
+                android:id="@+id/include_overview_home"
+                layout="@layout/layout_overview_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_background_home" />
+
+            <include
+                android:id="@+id/include_shopping_mode_home"
+                layout="@layout/layout_shopping_mode_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/include_overview_home"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/include_overview_home"
+                app:layout_constraintTop_toBottomOf="@+id/include_overview_home" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_icon_statistic_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_cyan_24dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_subtitle_home"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_home" />
+
+            <TextView
+                android:id="@+id/tv_subtitle_home"
+                style="@style/TextView.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/subtitle_home"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_md"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include_shopping_mode_home" />
+
+            <TextView
+                android:id="@+id/tv_location_home"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/loading"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_nm"
+                app:layout_constraintBottom_toBottomOf="@+id/img_icon_statistic_home"
+                app:layout_constraintStart_toEndOf="@+id/img_icon_statistic_home"
+                app:layout_constraintTop_toTopOf="@+id/img_icon_statistic_home" />
+
+            <include
+                android:id="@+id/include_statistic_home"
+                layout="@layout/layout_statistic_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/include_overview_home"
+                app:layout_constraintStart_toStartOf="@+id/include_overview_home"
+                app:layout_constraintTop_toBottomOf="@+id/img_icon_statistic_home" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

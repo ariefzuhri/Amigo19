@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PreAssessmentActivity"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_main">
+
+    <TextView
+        android:id="@+id/tv_title_pre_assessment"
+        style="@style/TextView.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/loading"
+        android:textSize="@dimen/font_lg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_pre_assessment"
+        style="@style/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start_pre_assessment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_pre_assessment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_icon_pre_assessment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_assignment_white_48dp" />
+
+            <TextView
+                android:id="@+id/tv_desc_pre_assessment"
+                style="@style/TextView.SemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_icon_pre_assessment"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="@string/desc_pre_assessment"
+                android:textSize="@dimen/font_md" />
+
+            <TextView
+                android:id="@+id/tv_note_pre_assessment"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_desc_pre_assessment"
+                android:text="@string/note_pre_assessment"
+                android:textSize="@dimen/font_nm" />
+
+            <TextView
+                android:id="@+id/tv_note_1_pre_assessment"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_note_pre_assessment"
+                android:paddingBottom="8dp"
+                android:text="@string/note_1_pre_assessment"
+                android:textSize="@dimen/font_nm" />
+
+            <TextView
+                android:id="@+id/tv_note_2_pre_assessment"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_note_1_pre_assessment"
+                android:paddingBottom="8dp"
+                android:text="@string/note_2_pre_assessment"
+                android:textSize="@dimen/font_nm" />
+
+            <TextView
+                android:id="@+id/tv_note_3_pre_assessment"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_note_2_pre_assessment"
+                android:paddingBottom="8dp"
+                android:text="@string/note_3_pre_assessment"
+                android:textSize="@dimen/font_nm" />
+
+            <TextView
+                android:id="@+id/tv_note_4_pre_assessment"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_note_3_pre_assessment"
+                android:paddingBottom="32dp"
+                android:text="@string/note_4_pre_assessment"
+                android:textSize="@dimen/font_nm" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_start_pre_assessment"
+        style="@style/NoboButton.White"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:nb_text="@string/start_assessment_pre_assessment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

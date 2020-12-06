@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        style="@style/CustomCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_background_tips_personal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:background="@drawable/shape_g"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title_tips_personal"
+                style="@style/TextView.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_tips_personal"
+                android:textSize="@dimen/font_md"/>
+
+            <TextView
+                android:id="@+id/tv_title_tips_1_personal"
+                style="@style/TextView.SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_tips_1_personal"
+                android:textSize="@dimen/font_nm"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_desc_tips_1_personal"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_tips_1_personal"
+                android:textSize="@dimen/font_nm"/>
+
+            <TextView
+                android:id="@+id/tv_title_tips_2_personal"
+                style="@style/TextView.SemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_tips_2_personal"
+                android:textSize="@dimen/font_nm"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_desc_tips_2_personal"
+                style="@style/TextView.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_tips_2_personal"
+                android:textSize="@dimen/font_nm"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

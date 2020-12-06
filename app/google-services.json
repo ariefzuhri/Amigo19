@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "484326307791",
+    "firebase_url": "https://amigo-19.firebaseio.com",
+    "project_id": "amigo-19",
+    "storage_bucket": "amigo-19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484326307791:android:e9e00a7029cae64c5184ba",
+        "android_client_info": {
+          "package_name": "com.ariefzuhri.amigo19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484326307791-fer6jj9053cpapot1me003mncvljflre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ariefzuhri.amigo19",
+            "certificate_hash": "ca5115df1fe8a727b1fb3f4c296089e8308f59a9"
+          }
+        },
+        {
+          "client_id": "484326307791-d66oqjegnv8oa4u07le5cj1h5u811qi6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ariefzuhri.amigo19",
+            "certificate_hash": "400ece0d6cd0c758666d0676874981eb87a08436"
+          }
+        },
+        {
+          "client_id": "484326307791-ll1j0qjm0odonnbrdru9di2iho368lbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKX1xIi-d1DbwPfO73M-6Wvyc3F_DWJwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484326307791-ll1j0qjm0odonnbrdru9di2iho368lbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
