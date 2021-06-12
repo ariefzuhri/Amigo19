@@ -3,11 +3,13 @@ package com.ariefzuhri.amigo19.rest;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import static com.ariefzuhri.amigo19.BuildConfig.NEWS_API_KEY;
+
 public class RetrofitClient {
     public static final String WORLD_COUNTRIES_URL = "https://covid19.mathdro.id";
     private static final String BASE_URL = "https://api.kawalcorona.com";
     private static ApiService apiService;
-    private static final String NEWS_URL = "http://newsapi.org/v2/top-headlines?q=covid&country=id&apiKey=***REMOVED***";
+    private static final String NEWS_URL = "http://newsapi.org/v2/top-headlines?q=covid&country=id&apiKey=" + NEWS_API_KEY;
 
     public RetrofitClient(){
         Retrofit retrofit = new Retrofit.Builder()
